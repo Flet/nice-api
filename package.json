@@ -1,19 +1,15 @@
 {
   "name": "nice-api",
-  "description": "",
-  "version": "0.0.0",
-  "homepage": "",
+  "description": "Put a read-only API in front of a google spreadsheet for easier consumption.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Flet/nice-api#readme",
   "private": true,
   "main": "src",
   "keywords": [
-    "feathers"
+    "feathers","api","rest","google","sheet"
   ],
-  "author": {
-    "name": "Dan Flettre",
-    "email": "flettre@gmail.com"
-  },
+  "author": "Dan Flettre <flettre@gmail.com>",
   "contributors": [],
-  "bugs": {},
   "directories": {
     "lib": "src",
     "test": "test/",
@@ -56,5 +52,13 @@
     "mocha": "^7.2.0",
     "nodemon": "^2.0.4",
     "standard": "^14.3.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flet/nice-api.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Flet/nice-api/issues"
   }
 }
