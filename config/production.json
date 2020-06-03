@@ -1,0 +1,7 @@
+{
+  "host": "nice-api-app.example.com",
+  "port": "PORT",
+  "sheetCacheTtl": "SHEET_CACHE_TTL",
+  "apiKey": "API_KEY",
+  "sheetId": "SHEET_ID"
+}
