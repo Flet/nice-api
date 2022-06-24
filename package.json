@@ -52,7 +52,7 @@
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "mocha": "^9.0.0",
     "nodemon": "^2.0.7",
     "standard": "^16.0.3"
