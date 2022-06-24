@@ -1,6 +1,6 @@
 // Application hooks that run for every service
 
-module.exports = {
+const hooks = {
   before: {
     all: [],
     find: [],
@@ -31,3 +31,5 @@ module.exports = {
     remove: []
   }
 }
+
+export default hooks

@@ -1,8 +1,8 @@
 // Initializes the `rows` service on path `/rows`
-const { Rows } = require('./rows.class')
-const hooks = require('./rows.hooks')
+import { Rows } from './rows.class.js'
+import hooks from './rows.hooks.js'
 
-module.exports = function (app) {
+export default function (app) {
   const options = {
     paginate: app.get('paginate')
   }

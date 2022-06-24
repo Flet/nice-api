@@ -1,7 +1,7 @@
-const assert = require('assert').strict
-const axios = require('axios')
-const url = require('url')
-const app = require('../src/app')
+import assert from 'assert/strict'
+import axios from 'axios'
+import url from 'url'
+import app from '../src/app.js'
 
 const port = app.get('port') || 8998
 const getUrl = pathname => url.format({

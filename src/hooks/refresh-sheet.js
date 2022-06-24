@@ -1,14 +1,14 @@
 // Use this hook to manipulate incoming or outgoing data.
 // For more information on hooks see: http://docs.feathersjs.com/api/hooks.html
 
-const camelCase = require('camelcase')
-const { GoogleSpreadsheet } = require('google-spreadsheet')
+import camelCase from 'camelcase'
+import { GoogleSpreadsheet } from 'google-spreadsheet'
 
 const cache = {
   lastRefresh: 0
 }
 
-module.exports = (options = {}) => {
+export default (options = {}) => {
   return async context => {
     await fetchAndParseSheet(context)
     return context

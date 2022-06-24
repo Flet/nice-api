@@ -1,4 +1,4 @@
-module.exports = function (app) {
+function channels (app) {
   if (typeof app.channel !== 'function') {
     // If no real-time functionality has been configured just return
     return
@@ -59,3 +59,5 @@ module.exports = function (app) {
   //   ];
   // });
 }
+
+export default channels

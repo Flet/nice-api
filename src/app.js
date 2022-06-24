@@ -1,18 +1,17 @@
-const path = require('path')
-const favicon = require('serve-favicon')
-const compress = require('compression')
-const helmet = require('helmet')
-const cors = require('cors')
-const logger = require('./logger')
+import path from 'path'
+import favicon from 'serve-favicon'
+import compress from 'compression'
+import helmet from 'helmet'
+import cors from 'cors'
+import logger from './logger.js'
 
-const feathers = require('@feathersjs/feathers')
-const configuration = require('@feathersjs/configuration')
-const express = require('@feathersjs/express')
-
-const middleware = require('./middleware')
-const services = require('./services')
-const appHooks = require('./app.hooks')
-const channels = require('./channels')
+import feathers from '@feathersjs/feathers'
+import configuration from '@feathersjs/configuration'
+import express from '@feathersjs/express'
+import middleware from './middleware/index.js'
+import services from './services/index.js'
+import appHooks from './app.hooks.js'
+import channels from './channels.js'
 
 const app = express(feathers())
 
@@ -44,4 +43,4 @@ app.use(express.errorHandler({ logger }))
 
 app.hooks(appHooks)
 
-module.exports = app
+export default app

@@ -1,7 +1,7 @@
 
-const refreshSheet = require('../../hooks/refresh-sheet')
+import refreshSheet from '../../hooks/refresh-sheet.js'
 
-module.exports = {
+export default {
   before: {
     all: [refreshSheet()],
     find: [],

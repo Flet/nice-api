@@ -1,7 +1,7 @@
-const { Service } = require('feathers-memory')
-const { NotImplemented } = require('@feathersjs/errors')
+import { Service } from 'feathers-memory'
+import NotImplemented from '@feathersjs/errors'
 
-exports.Rows = class Rows extends Service {
+export class Rows extends Service {
   async update (id, data, params) {
     throw new NotImplemented()
   }
